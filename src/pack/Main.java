@@ -11,10 +11,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
 
-        
         byte op;
-        float f_digito1, f_digito2, resultado = 0;
-        char e = 't';
+        double f_digito1, f_digito2, resultado = 0;
         
         try{
             do{    
@@ -40,8 +38,8 @@ public class Main {
                     case 1:
 
                         Tela.limparTela();  
-                        f_digito1 = leia.nextFloat();
-                        f_digito2 = leia.nextFloat();
+                        f_digito1 = leia.nextDouble();
+                        f_digito2 = leia.nextDouble();
 
                         resultado = f_digito1 + f_digito2;
                         Tela.limparTela();
@@ -52,8 +50,8 @@ public class Main {
                     case 2:
 
                         Tela.limparTela();
-                        f_digito1 = leia.nextFloat();
-                        f_digito2 = leia.nextFloat();
+                        f_digito1 = leia.nextDouble();
+                        f_digito2 = leia.nextDouble();
 
                         resultado = f_digito1 - f_digito2;
                         Tela.limparTela();
@@ -66,8 +64,8 @@ public class Main {
                     case 3:
 
                         Tela.limparTela();
-                        f_digito1 = leia.nextFloat();
-                        f_digito2 = leia.nextFloat();
+                        f_digito1 = leia.nextDouble();
+                        f_digito2 = leia.nextDouble();
 
                         resultado = f_digito1 / f_digito2;
                         Tela.limparTela();
@@ -78,8 +76,8 @@ public class Main {
                     case 4:
 
                         Tela.limparTela();
-                        f_digito1 = leia.nextFloat();
-                        f_digito2 = leia.nextFloat();
+                        f_digito1 = leia.nextDouble();
+                        f_digito2 = leia.nextDouble();
 
                         resultado = f_digito1 * f_digito2;
                         Tela.limparTela();
@@ -90,10 +88,10 @@ public class Main {
                     case 5:
 
                         Tela.limparTela();
-                        f_digito1 = leia.nextFloat();
-                        f_digito2 = leia.nextFloat();
+                        f_digito1 = leia.nextDouble();
+                        f_digito2 = leia.nextDouble();
 
-                        resultado = (float) Math.pow(f_digito1, f_digito2);
+                        resultado = Math.pow(f_digito1, f_digito2);
                         Tela.limparTela();
 
                         System.out.print("O Resultado de: " + f_digito1 + " Elevado a " + f_digito2 + " Potência é:\n"
@@ -104,7 +102,7 @@ public class Main {
                         Tela.limparTela();
                         f_digito1 = leia.nextFloat();
                         
-                        resultado = (float) Math.sqrt(f_digito1);
+                        resultado =  Math.sqrt(f_digito1);
                         Tela.limparTela();
 
                         System.out.print("A Raiz Quadradade: " + f_digito1 + " é:\n"
@@ -115,7 +113,7 @@ public class Main {
                         Tela.limparTela();
                         f_digito1 = leia.nextFloat();
 
-                        resultado = (float) Math.cbrt(f_digito1);
+                        resultado =  Math.cbrt(f_digito1);
                         Tela.limparTela();
 
                         System.out.print("A Raiz cubica: " + f_digito1 + " é:\n"
@@ -130,9 +128,9 @@ public class Main {
                         Tela.limparTela();
 
                         System.out.print("Qual a Porcetagem que Deseja Calcular: ");
-                        f_digito1 = leia.nextFloat();
+                        f_digito1 = leia.nextDouble();
                         System.out.print("De: ");
-                        f_digito2 = leia.nextFloat();
+                        f_digito2 = leia.nextDouble();
 
                         resultado = f_digito1 * f_digito2 / 100;
                         Tela.limparTela();
